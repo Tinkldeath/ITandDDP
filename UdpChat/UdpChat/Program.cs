@@ -18,7 +18,6 @@ namespace UdpChat
         {
             try
             {
-                // Получаем данные, необходимые для соединения
                 Console.WriteLine("Укажите локальный порт");
                 localPort = Convert.ToInt16(Console.ReadLine());
 
@@ -28,7 +27,6 @@ namespace UdpChat
                 Console.WriteLine("Укажите удаленный IP-адрес");
                 remoteIPAddress = IPAddress.Parse(Console.ReadLine());
 
-                // Создаем поток для прослушивания
                 Thread tRec = new Thread(new ThreadStart(Receiver));
                 tRec.Start();
 
@@ -45,18 +43,11 @@ namespace UdpChat
 
         private static void Send(string datagram)
         {
-            // Создаем UdpClient
             UdpClient sender = new UdpClient();
-
-            // Создаем endPoint по информации об удаленном хосте
             IPEndPoint endPoint = new IPEndPoint(remoteIPAddress, remotePort);
-
             try
             {
-                // Преобразуем данные в массив байтов
                 byte[] bytes = Encoding.UTF8.GetBytes(datagram);
-
-                // Отправляем данные
                 sender.Send(bytes, bytes.Length, endPoint);
                 logger.Log(datagram);
             }
@@ -66,18 +57,14 @@ namespace UdpChat
             }
             finally
             {
-                // Закрыть соединение
                 sender.Close();
             }
         }
 
         public static void Receiver()
         {
-            // Создаем UdpClient для чтения входящих данных
             UdpClient receivingUdpClient = new UdpClient(localPort);
-
             IPEndPoint RemoteIpEndPoint = null;
-
             try
             {
                 Console.WriteLine(
@@ -87,11 +74,8 @@ namespace UdpChat
 
                 while (true)
                 {
-                    // Ожидание дейтаграммы
                     byte[] receiveBytes = receivingUdpClient.Receive(
                        ref RemoteIpEndPoint);
-
-                    // Преобразуем и отображаем данные
                     string returnData = Encoding.UTF8.GetString(receiveBytes);
                     string resultString = " --> " + returnData.ToString();
                     logger.Log(resultString);
