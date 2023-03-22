@@ -25,4 +25,4 @@
 * Reactive UI
 
 ## Additional
-* [Figma mockup](https://www.figma.com/file/dkVyDuuJfs4rYi6yMATlNM/Art-Portal?node-id=0-1&t=gTaCkwvrrSdUyoSp-0)
+* [Figma mockup](https://www.figma.com/file/dkVyDuuJfs4rYi6yMATlNM/Art-Portal?t=QxPJZ3eBRM0dKUfH-1)
