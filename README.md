@@ -27,4 +27,4 @@
 ## Additional
 * [Figma mockup](https://www.figma.com/file/dkVyDuuJfs4rYi6yMATlNM/Art-Portal?t=QxPJZ3eBRM0dKUfH-1)
 * Data models
-* ![Data models](Docs/DataModels.png)
+![Data models](Docs/DataModels.png)
