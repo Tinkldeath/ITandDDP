@@ -42,6 +42,74 @@ body form {
     margin: 0 auto;
 }
 
+.add-container {
+    display: grid;
+    background-color: #132226;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin: 0 auto;
+    min-width: 800px;
+    min-height: 600px;
+}
+
+.add-container a {
+    margin: 10px;
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.add-container input {
+    margin-left: 35px;
+    margin-right: 35px;
+    height: 50px;
+    border-radius: 10px;
+    color: gray;
+    margin: auto 50px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.add-container select {
+    margin-left: 35px;
+    margin-right: 35px;
+    height: 50px;
+    border-radius: 10px;
+    color: gray;
+    margin: auto 50px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.add-container option {
+    margin-left: 35px;
+    margin-right: 35px;
+    height: 50px;
+    border-radius: 10px;
+    color: gray;
+    margin: auto 50px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.add-container button {
+    max-width: 150px;
+    max-height: 50px;
+    height: 50px;
+    width: 150px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 10px auto;
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+}
+
 .login-container a {
     margin: 10px;
     color: white;

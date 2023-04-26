@@ -33,6 +33,7 @@ app.use('/api', imagesRouter);
 app.use((error, req, res, next) => {
     const message = `This is unexpected field ${error.field}`
     console.log(message);
+    console.log(error);
     res.status(500).send(message);
 });
 

@@ -3,7 +3,28 @@ const path = require('path');
 const keys = require('./../config/keys');
 
 module.exports.authors = async function(req, res) {
-    res.send('Authors');
+    const users = await userModel.find({});
+    document = {
+        authors: []
+    }
+    for (let i = 0; i < users.length; i++) {
+        const user = users[i];
+        let imageUrl = '';
+        if(user.imageUrl) {
+            imageUrl = `http://${keys.host}:${keys.port}/api/images/` + (user.imageUrl.replace('/uploads/', ''))
+        } else {
+            imageUrl = `http://${keys.host}:${keys.port}/api/images/duck.png`
+        }
+        document.authors.push({
+            _id: user._id,
+            name: user.username,
+            imageUrl: imageUrl,
+            topRated: user.topRated,
+            posts: user.posts.length,
+            friends: user.friends.length
+        });
+    }
+    res.status(200).json(document);
 };
 
 module.exports.user = async function(req, res) {

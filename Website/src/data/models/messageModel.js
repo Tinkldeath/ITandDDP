@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const schema = new Schema({
-    sender: { type: 'ObjectId', ref: 'User' },
+    sender: { type: Schema.Types.ObjectId, required: true },
     content: { type: String, required: true },
     date: { type: Date, default: Date.now },
     edited: { type: Boolean, required: true },

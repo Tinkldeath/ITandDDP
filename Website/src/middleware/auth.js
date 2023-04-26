@@ -8,12 +8,13 @@ module.exports = function(req, res, next) {
     try {
         const token = req.headers.authorization.split(' ')[1]
         if(!token) {
-            return res.sendStatus(403);
+            return res.redirect('/login');
         }
         const { id } = jwt.verify(token, keys.jwt);
         req.userId = id
         next();
     } catch(error) {
         console.log(error);
+        return res.redirect('/login');
     }
 };

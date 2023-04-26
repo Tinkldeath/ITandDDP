@@ -23,8 +23,8 @@
                     <a href="/"> Art portal </a>
                 </div>
                 <button class="navbar-link" onclick="renderTop()"> Top </button>
-                <button class="navbar-link" href="/categories"> Categories </button>
-                <button class="navbar-link" href="/authors"> Authors </button>
+                <button class="navbar-link" onclick="renderCategories()"> Categories </button>
+                <button class="navbar-link" onclick="renderAuthors()"> Authors </button>
                 <div style="display: flex; margin-right: 20px;" class="searchbar-container">
                     <input class="searchbar" type="text" placeholder="Type here for search">
                     <button class="search-button"> <img src="images/search.png"> </button>
@@ -37,14 +37,6 @@
     <div class="container">
         <!-- Toolbar -->
         <div class="toolbar" id="toolbar"> 
-            <!-- <img class="toolbar-image" src="./../images/duck.png">
-            <button class="toolbar-user" href="/login"> Unauthorized duck </button>
-            <button class="toolbar-button"> <img class="button-image" src="./../images/message.png"> Chats </button>
-            <button class="toolbar-button"> <img class="button-image" src="./../images/archive.png" style="width: 40px; height: 40px; top: 0px; left: 3px;">  Archive </button>
-            <button class="toolbar-button"> <img class="button-image" src="./../images/statistics.png">  Statistics </button>
-            <button class="toolbar-button"> <img class="button-image" src="./../images/friends.png">  Friends </button>
-            <div class="spacer"></div>
-            <button class="logout-button" onclick="routeToLogin()"> Login </button> -->
             <script> renderToolbar() </script>
         </div>
         <div class="content">
@@ -53,36 +45,16 @@
                     <script>
                         renderPosts()
                     </script>
-                    <!-- <li class="category">
-                        <img class="category-image" src="./../images/graffiti.jpg">
-                        <div class="category-content">
-                            <h2>Graffiti</h2>
-                            <p>Images or inscriptions scratched, written or drawn with paint or ink on walls and other surfaces.</p>
-                            <button class="category-content-button"> <img src="./../images/archive.png"> 5546 Artworks</button>
-                        </div>
-                    </li>
-                    <li class="profile">
-                        <div class="profile-header">
-                            <img class="profile-image" src="./../images/duck.png"> 
-                            <div class="profile-content">
-                                <a class="profile-content-author" href=""> Another user </a>
-                                <a class="top-rated" href="">Top rated artist</a>
-                            </div>
-                        </div>
-                        <div class="profile-footer">
-                            <button class="profile-footer-button"><img src="./../images/archive.png"> 42 Artworks</button>
-                            <button class="profile-footer-button"><img src="./../images/friends.png">4 Friends</button>
-                        </div>
-                    </li>
-                    <li></li> -->
                 </ul>
             </div>
             <div class="options"> 
-                <h3> Filter: </h3>
+                <h3> Options: </h3>
                 <div class="options-section">
-                    <button> Option <img class="option-image" src="./../images/option-triangle.png"> </button>
-                    <button> Option <img class="option-image" src="./../images/option-triangle.png"> </button>
-                    <button> Option <img class="option-image" src="./../images/option-triangle.png"> </button>
+                    <button class="create-post-button" onclick="routeToNewPost()"> Create Post </button>
+                    <button class="options-button"> Option <img class="option-image" src="./../images/option-triangle.png"> </button>
+                    <button class="options-button"> Option <img class="option-image" src="./../images/option-triangle.png"> </button>
+                    <button class="options-button"> Option <img class="option-image" src="./../images/option-triangle.png"> </button>
+                    <button class="clear-button"> Clear </button>
                 </div>
             </div>
         </div>

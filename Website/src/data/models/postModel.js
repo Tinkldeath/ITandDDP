@@ -2,16 +2,17 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const schema = new Schema({
-    owner: { type: 'ObjectId', ref: 'User' },
+    owner: { type: Schema.Types.ObjectId, required: true },
     title: { type: String, required: true },
     date: { type: Date, default: Date.now },
     artworkUrl: { type: String, required: true},
-    category: { type: 'ObjectId', ref: 'Category' },
+    category: { type: Schema.Types.ObjectId, required: true },
     style: {type: String, required: true},
     technique: {type: String, required: true},
     genre: {type: String, required: true},
-    likes: [ { type: 'ObjectId', ref: 'User' } ],
-    comments: [ { type: 'ObjectId', ref: 'User' } ]
+    likes: [ { type: Schema.Types.ObjectId, required: true } ],
+    comments: [ { type: Schema.Types.ObjectId, required: true } ],
+    inTop: {type: Boolean, required: true}
 });
 
 module.exports = mongoose.model('Post', schema, 'posts');
