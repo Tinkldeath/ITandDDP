@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="icon" type="image/x-icon" href="./../../images/icon.png">
+    <link rel="stylesheet", href="css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="js/register.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <a href="/">Go back</a>
+            <div class="logo">
+                <img src="./../../images/icon.png">
+                <a href="/"> Art portal </a>
+            </div>
+            <form id="registerForm">
+                <input type="text" id="login" name="login" placeholder="Enter your login" required>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <input type="text" id="username" name="username" placeholder="Enter your name" required>
+                <div style="display: flex; width: 100%;">
+                    <input type="file" name="recfile" id="image"> 
+                    <p> Set your profile picture </p>
+                </div>
+            </form>
+            <button onclick="submitForm()"> Sign Up </button>
+            <div class="login-container-navlinks">
+                <!-- <a class="login-container-navlink" href="/"> Forgot password? </a> -->
+                <a class="login-container-navlink" href="/login"> Sign In </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

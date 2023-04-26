@@ -2,18 +2,26 @@
   "name": "artportal",
   "version": "1.0.0",
   "description": "\"REST API for ArtPortal website\"",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon ./root/index.js"
+    "server": "nodemon ./src/index.js"
   },
   "author": "tinkldeath",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "express": "^4.18.2",
+    "jquery": "^3.6.4",
+    "jsonwebtoken": "^9.0.0",
+    "mongodb": "^5.3.0",
+    "mongoose": "^7.0.5",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.21"
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.21",
+    "uuid": "^9.0.0"
   }
 }

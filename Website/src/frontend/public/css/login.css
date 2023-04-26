@@ -1,0 +1,132 @@
+html, body {
+    background-color: black;
+    position: relative;
+}
+
+body a:hover {
+    color: lightslategray;
+}
+
+body p {
+    margin: 10px;
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: right;
+    margin-right: 55px;
+    width: 50%;
+}
+
+body form {
+    display: grid;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    display: grid;
+    background-color: #132226;
+    border: 1px solid white;
+    border-radius: 15px;
+    min-width: 800px;
+    min-height: 600px;
+    max-width: 800px;
+    max-height: 600px;
+    margin: 0 auto;
+}
+
+.login-container a {
+    margin: 10px;
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.login-container input {
+    margin-left: 35px;
+    margin-right: 35px;
+    height: 50px;
+    border-radius: 10px;
+    color: gray;
+    margin: auto 50px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.login-container label {
+    margin: 10px;
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 55px;
+}
+
+.login-container button {
+    max-width: 150px;
+    max-height: 50px;
+    height: 50px;
+    width: 150px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 10px auto;
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+}
+
+.login-container button:hover {
+    background-color: slategray;
+    cursor: pointer;
+}
+
+.login-container-navlink {
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+.login-container-navlinks {
+    width: 100%;
+    display: grid;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.logo img {
+    width: 65px;
+    height: 65px;
+}
+
+.logo a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jim Nightshade', cursive;
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+@media (max-width: 800px) {
+    .container {
+        display: grid;
+    }
+    .login-container {
+        max-width: auto;
+        max-height: auto;
+    }
+}

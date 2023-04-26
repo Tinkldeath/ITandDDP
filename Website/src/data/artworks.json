@@ -1,0 +1,580 @@
+{
+    "artworks": [
+        {
+            "title": "Napoleon Crossing the Alps on 20th May 1800 1803",
+            "author": "Jacques-Louis David",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Jacques-Louis_David/paintings-lg/davidjl006.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Jacques-Louis_David/davidjl000.jpg"
+        },
+        {
+            "title": "Starry Night 1889",
+            "author": "Vincent van Gogh",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Vincent_van_Gogh/paintings-lg/gogh001.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Vincent_van_Gogh/gogh000.jpg"
+        },
+        {
+            "title": "The Lunch on the Grass 1863",
+            "author": "Edouard Manet",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Edouard_Manet/paintings-lg/manet002.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Edouard_Manet/manet000.jpg"
+        },
+        {
+            "title": "Water Lily Pond, (Symphony in Green) 1899",
+            "author": "Claude Monet",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Claude_Oscar_Monet/paintings-lg/monet018.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Claude_Oscar_Monet/monet000.jpg"
+        },
+        {
+            "title": "The Calling of Saint Matthew 1599",
+            "author": "Michelangelo Merisi da Caravaggio",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Michelangelo_Merisi_da_Caravaggio/paintings-lg/caravaggio031.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Michelangelo_Merisi_da_Caravaggio/caravaggio000.jpg"
+        },
+        {
+            "title": "The Kiss c.1907/08",
+            "author": "Gustav Klimt",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Gustav_Klimt/paintings-lg/klimt001.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Gustav_Klimt/klimt000.jpg"
+        },
+        {
+            "title": "Portrait of Adele Bloch-Bauer I 1907",
+            "author": "Gustav Klimt",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Gustav_Klimt/paintings-lg/klimt016.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Gustav_Klimt/klimt000.jpg"
+        },
+        {
+            "title": "Luncheon of the Boating Party c.1880/81",
+            "author": "Pierre-Auguste Renoir",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Pierre-Auguste_Renoir/paintings-lg/renoir090.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Pierre-Auguste_Renoir/renoir000.jpg"
+        },
+        {
+            "title": "The Swing 1767",
+            "author": "Jean-Honore Fragonard",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Jean-Honore_Fragonard/paintings-lg/fragonard002.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Jean-Honore_Fragonard/fragonard000.jpg"
+        },
+        {
+            "title": "The Birth of Venus c.1485",
+            "author": "Sandro Botticelli",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Alessandro_Filippepi_Botticelli/paintings-lg/botticelli001.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Alessandro_Filippepi_Botticelli/botticelli000.jpg"
+        },
+        {
+            "title": "The Scream 1893",
+            "author": "Edvard Munch",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Edvard-Munch/paintings-lg/munch004.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Edvard-Munch/munch.jpg"
+        },
+        {
+            "title": "The Wanderer Above a Sea of Mist 1818",
+            "author": "Caspar David Friedrich",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Caspar_David_Friedrich/paintings-lg/friedrich016.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Caspar_David_Friedrich/friedrich000.jpg"
+        },
+        {
+            "title": "Irises 1889",
+            "author": "Vincent van Gogh",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Vincent_van_Gogh/paintings-lg/gogh002.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Vincent_van_Gogh/gogh000.jpg"
+        },
+        {
+            "title": "The Cafe Terrace on the Place du Forum, Arles 1888",
+            "author": "Vincent van Gogh",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Vincent_van_Gogh/paintings-lg/gogh151.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Vincent_van_Gogh/gogh000.jpg"
+        },
+        {
+            "title": "Two Sisters (On the Terrace) 1881",
+            "author": "Pierre-Auguste Renoir",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Pierre-Auguste_Renoir/paintings-lg/renoir004.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Pierre-Auguste_Renoir/renoir000.jpg"
+        },
+        {
+            "title": "Mona Lisa (La Gioconda) c.1503/06",
+            "author": "Leonardo da Vinci",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/da_Vinci_Leonardo/paintings-lg/leonardo004.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/da_Vinci_Leonardo/leonardo000.jpg"
+        },
+        {
+            "title": "The Man with the Golden Helmet 1636",
+            "author": "van Rijn Rembrandt",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Harmenszoon_van_Rijn_Rembrandt/paintings-lg/rembrandt253.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Harmenszoon_van_Rijn_Rembrandt/rembrandt000.jpg"
+        },
+        {
+            "title": "Flaming June 1895",
+            "author": "Lord Frederick Leighton",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Lord_Frederick_Leighton/paintings-lg/leighton001.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Lord_Frederick_Leighton/leighton000.jpg"
+        },
+        {
+            "title": "The Garden of Earthly Delights c.1490/00",
+            "author": "Hieronymus Bosch",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Bosch/paintings-lg/bosch-006.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Bosch/paintings-lg/bosch-001.jpg"
+        },
+        {
+            "title": "The Girl with a Pearl Earring c.1665/66",
+            "author": "Johannes Vermeer, van Delft",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Johannes_van_Delft_Vermeer/paintings-lg/vermeer005.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Johannes_van_Delft_Vermeer/vermeer000.jpg"
+        },
+        {
+            "title": "Blossoming Almond Tree 1890",
+            "author": "Vincent van Gogh",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Vincent_van_Gogh/paintings-lg/gogh103.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Vincent_van_Gogh/gogh000.jpg"
+        },
+        {
+            "title": "Storm on the Sea of Galilee 1633",
+            "author": "van Rijn Rembrandt",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Harmenszoon_van_Rijn_Rembrandt/paintings-lg/rembrandt007.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Harmenszoon_van_Rijn_Rembrandt/rembrandt000.jpg"
+        },
+        {
+            "title": "Composition 8 1923",
+            "author": "Wassily Kandinsky",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Wassily_Kandinsky/paintings-lg/kandinsky019.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Wassily_Kandinsky/kandinsky000.jpg"
+        },
+        {
+            "title": "The Lady of Shalott 1888",
+            "author": "John William Waterhouse",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/John_William_Waterhouse/paintings-lg/waterhouse001.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/John_William_Waterhouse/waterhouse000.jpg"
+        },
+        {
+            "title": "Dance at Bougival 1883",
+            "author": "Pierre-Auguste Renoir",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Pierre-Auguste_Renoir/paintings-lg/renoir003.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Pierre-Auguste_Renoir/renoir000.jpg"
+        },
+        {
+            "title": "The Milkmaid (The Kitchen Maid) c.1658/60",
+            "author": "Johannes Vermeer, van Delft",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Johannes_van_Delft_Vermeer/paintings-lg/vermeer001.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Johannes_van_Delft_Vermeer/vermeer000.jpg"
+        },
+        {
+            "title": "The Ninth Wave 1850",
+            "author": "Ivan Konstantinovich Aivazovsky",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Ivan_Konstantinovich_Aivazovsky/paintings-lg/aivazovsky001.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Ivan_Konstantinovich_Aivazovsky/portret.jpg"
+        },
+        {
+            "title": "Lady with an Ermine (Cecilia Gallerani) 1496",
+            "author": "Leonardo da Vinci",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/da_Vinci_Leonardo/paintings-lg/leonardo003.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/da_Vinci_Leonardo/leonardo000.jpg"
+        },
+        {
+            "title": "Impression, Sunrise (Soleil Levant) 1872",
+            "author": "Claude Monet",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Claude_Oscar_Monet/paintings-lg/monet150.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Claude_Oscar_Monet/monet000.jpg"
+        },
+        {
+            "title": "The Night Watch 1642",
+            "author": "van Rijn Rembrandt",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Harmenszoon_van_Rijn_Rembrandt/paintings-lg/rembrandt019.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Harmenszoon_van_Rijn_Rembrandt/rembrandt000.jpg"
+        },
+        {
+            "title": "Lady Godiva c.1898",
+            "author": "John Collier",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/John_Collier/paintings-lg/collier004.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/John_Collier/collier000.jpg"
+        },
+        {
+            "title": "Woman with a Parasol - Madame Monet and Her Son 1875",
+            "author": "Claude Monet",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Claude_Oscar_Monet/paintings-lg/monet177.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Claude_Oscar_Monet/monet000.jpg"
+        },
+        {
+            "title": "Dancers in Blue 1890",
+            "author": "Hilaire Germain Edgar Degas",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Hilaire_Germain_Edgar_Degas/paintings-lg/degas051.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Hilaire_Germain_Edgar_Degas/degas000.jpg"
+        },
+        {
+            "title": "The Sistine Madonna 1513",
+            "author": "Raffaello Sanzio Raphael",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Raffaello_Sanzio_Raphael/paintings-lg/raphael016.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Raffaello_Sanzio_Raphael/raphael000.jpg"
+        },
+        {
+            "title": "The Sleeping Venus c.1508/10",
+            "author": "Giorgio da Castelfranco Giorgione",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Giorgio_da_Castelfranco_Giorgione/paintings-lg/giorgione003.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Giorgio_da_Castelfranco_Giorgione/giorgione000.jpg"
+        },
+        {
+            "title": "Olympia 1863",
+            "author": "Edouard Manet",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Edouard_Manet/paintings-lg/manet001.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Edouard_Manet/manet000.jpg"
+        },
+        {
+            "title": "Vase with Irises Against a Yellow Background 1890",
+            "author": "Vincent van Gogh",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Vincent_van_Gogh/paintings-lg/gogh108.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Vincent_van_Gogh/gogh000.jpg"
+        },
+        {
+            "title": "A Bar at the Folies-Bergere c.1881/82",
+            "author": "Edouard Manet",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Edouard_Manet/paintings-lg/manet015.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Edouard_Manet/manet000.jpg"
+        },
+        {
+            "title": "Las Meninas (The Maids of Honor) c.1656",
+            "author": "Diego Rodriguez de Silva Velazquez",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Diego_Rodriguez_de_Silva_Velazquez/paintings-lg/velazquez036.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Diego_Rodriguez_de_Silva_Velazquez/velazquez000.jpg"
+        },
+        {
+            "title": "The Death of Marat 1793",
+            "author": "Jacques-Louis David",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Jacques-Louis_David/paintings-lg/davidjl001.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Jacques-Louis_David/davidjl000.jpg"
+        },
+        {
+            "title": "The Gleaners 1857",
+            "author": "Jean-Francois Millet",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Jean-Francois_Millet/paintings-lg/millet005.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Jean-Francois_Millet/millet000.jpg"
+        },
+        {
+            "title": "The Polar Sea (The Sea of Ice) 1824",
+            "author": "Caspar David Friedrich",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Caspar_David_Friedrich/paintings-lg/friedrich003.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Caspar_David_Friedrich/friedrich000.jpg"
+        },
+        {
+            "title": "Nude Descending a Staircase II 1912",
+            "author": "Marcel Duchamp",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Marcel-Duchamp/paintings-lg/duchamp-001.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Marcel-Duchamp/paintings-lg/duchamp-001.jpg"
+        },
+        {
+            "title": "Whistler's Mother c.1834",
+            "author": "James Whistler",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/James-Whistler/paintings-lg/james-whistler-001.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/James-Whistler/paintings-lg/james-whistler-001.jpg"
+        },
+        {
+            "title": "Self-Portrait with Bandaged Ear 1889",
+            "author": "Vincent van Gogh",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Vincent_van_Gogh/paintings-lg/gogh019.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Vincent_van_Gogh/gogh000.jpg"
+        },
+        {
+            "title": "American Gothic 1930",
+            "author": "Grant Wood",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Grant-Wood/paintings-lg/grant-wood-001.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Grant-Wood/grant-wood.jpg"
+        },
+        {
+            "title": "Wheat Field with Cypresses 1889",
+            "author": "Vincent van Gogh",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Vincent_van_Gogh/paintings-lg/gogh045.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Vincent_van_Gogh/gogh000.jpg"
+        },
+        {
+            "title": "View of Toledo c.1599/00",
+            "author": "Domenikos Theotokopoulos El Greco",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Domenikos_Theotokopoulos_El_Greco/paintings-lg/greco005.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Domenikos_Theotokopoulos_El_Greco/greco000.jpg"
+        },
+        {
+            "title": "Netherlandish Proverbs 1559",
+            "author": "Pieter Bruegel the Elder",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Pieter_the_Elder_Bruegel/paintings-lg/bruegel003.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Pieter_the_Elder_Bruegel/bruegel000.jpg"
+        },
+        {
+            "title": "The Grande Odalisque 1814",
+            "author": "Jean Auguste Dominique Ingres",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Jean_Auguste_Dominique_Ingres/paintings-lg/ingres026.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Jean_Auguste_Dominique_Ingres/ingres000.jpg"
+        },
+        {
+            "title": "Madonna della Seggiola c.1512/14",
+            "author": "Raffaello Sanzio Raphael",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Raffaello_Sanzio_Raphael/paintings-lg/raphael008.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Raffaello_Sanzio_Raphael/raphael000.jpg"
+        },
+        {
+            "title": "Liberty Leading the People 1830",
+            "author": "Eugene Delacroix",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Delacroix/paintings-lg/delacroix-005.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Delacroix/delacroix.jpg"
+        },
+        {
+            "title": "The Dance Class c.1873/76",
+            "author": "Hilaire Germain Edgar Degas",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Hilaire_Germain_Edgar_Degas/paintings-lg/degas012.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Hilaire_Germain_Edgar_Degas/degas000.jpg"
+        },
+        {
+            "title": "The Laughing Cavalier 1624",
+            "author": "Frans Hals",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Frans_Hals/paintings-lg/hals003.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Frans_Hals/hals000.jpg"
+        },
+        {
+            "title": "Madame X (Madame Pierre Gautreau) 1884",
+            "author": "John Singer Sargent",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/John_Singer_Sargent/paintings-lg/sargent019.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/John_Singer_Sargent/sargent000.jpg"
+        },
+        {
+            "title": "The Sleeping Gypsy 1897",
+            "author": "Henri Rousseau (Le Douanier)",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Henri_Rousseau/paintings-lg/rousseau008.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Henri_Rousseau/rousseau.jpg"
+        },
+        {
+            "title": "Napoleon I on the Imperial Throne 1806",
+            "author": "Jean Auguste Dominique Ingres",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Jean_Auguste_Dominique_Ingres/paintings-lg/ingres008.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Jean_Auguste_Dominique_Ingres/ingres000.jpg"
+        },
+        {
+            "title": "The Fighting Temeraire 1839",
+            "author": "Joseph Mallord William Turner",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Joseph_Mallord_William_Turner/paintings-lg/turner012.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Joseph_Mallord_William_Turner/turner.jpg"
+        },
+        {
+            "title": "The Gross Clinic 1875",
+            "author": "Thomas Eakins",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Thomas_Eakins/paintings-lg/eakins004.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Thomas_Eakins/eakins000.jpg"
+        },
+        {
+            "title": "The Annunciation c.1472/75",
+            "author": "Leonardo da Vinci",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/da_Vinci_Leonardo/paintings-lg/leonardo001.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/da_Vinci_Leonardo/leonardo000.jpg"
+        },
+        {
+            "title": "Carnation, Lily, Lily, Rose c.1885/86",
+            "author": "John Singer Sargent",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/John_Singer_Sargent/paintings-lg/sargent030.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/John_Singer_Sargent/sargent000.jpg"
+        },
+        {
+            "title": "Jean de Dinteville, Georges de Selve (Ambassadors) 1533",
+            "author": "Hans Holbein the Younger",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Hans_the_Younger_Holbein/paintings-lg/holbein026.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Hans_the_Younger_Holbein/holbein000.jpg"
+        },
+        {
+            "title": "The Shepherds of Arcadia (Et In Arcadia Ego) c.1638/40",
+            "author": "Nicolas Poussin",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Nicolas_Poussin/paintings-lg/poussin002.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Nicolas_Poussin/poussin000.jpg"
+        },
+        {
+            "title": "The Arnolfini Portrait 1434",
+            "author": "Jan van Eyck",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Jan_van_Eyck/paintings-lg/eyck001.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Jan_van_Eyck/eyck000.jpg"
+        },
+        {
+            "title": "The Astronomer 1668",
+            "author": "Johannes Vermeer, van Delft",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Johannes_van_Delft_Vermeer/paintings-lg/vermeer020.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Johannes_van_Delft_Vermeer/vermeer000.jpg"
+        },
+        {
+            "title": "Primavera c.1482",
+            "author": "Sandro Botticelli",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Alessandro_Filippepi_Botticelli/paintings-lg/botticelli002.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Alessandro_Filippepi_Botticelli/botticelli000.jpg"
+        },
+        {
+            "title": "The Hunters in the Snow (Winter) 1565",
+            "author": "Pieter Bruegel the Elder",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Pieter_the_Elder_Bruegel/paintings-lg/bruegel001.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Pieter_the_Elder_Bruegel/bruegel000.jpg"
+        },
+        {
+            "title": "Concentric Circles 1913",
+            "author": "Wassily Kandinsky",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Wassily_Kandinsky/paintings-lg/kandinsky002.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Wassily_Kandinsky/kandinsky000.jpg"
+        },
+        {
+            "title": "Self Portrait 1889",
+            "author": "Vincent van Gogh",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Vincent_van_Gogh/paintings-lg/gogh058.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Vincent_van_Gogh/gogh000.jpg"
+        },
+        {
+            "title": "The Oath of the Horatii 1784",
+            "author": "Jacques-Louis David",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Jacques-Louis_David/paintings-lg/davidjl002.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Jacques-Louis_David/davidjl000.jpg"
+        },
+        {
+            "title": "The Skiff (La Yole) 1875",
+            "author": "Pierre-Auguste Renoir",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Pierre-Auguste_Renoir/paintings-lg/renoir190.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Pierre-Auguste_Renoir/renoir000.jpg"
+        },
+        {
+            "title": "A Man with a Quilted Sleeve (Ariosto) c.1510/12",
+            "author": "Tiziano Vecellio Titian",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Tiziano_Vecellio_Titian/paintings-lg/titian002.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Tiziano_Vecellio_Titian/titian000.jpg"
+        },
+        {
+            "title": "The Nude Maja c.1797/00",
+            "author": "Francisco de Goya",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Francisco_de_Goya_y_Lucientes/paintings-lg/goya003.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Francisco_de_Goya_y_Lucientes/goya.jpg"
+        },
+        {
+            "title": "The 3rd of May 1808 in Madrid 1814",
+            "author": "Francisco de Goya",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Francisco_de_Goya_y_Lucientes/paintings-lg/goya013.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Francisco_de_Goya_y_Lucientes/goya.jpg"
+        },
+        {
+            "title": "The Abduction of Psyche 1895",
+            "author": "Adolphe-William Bouguereau",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Adolphe-William_Bouguereau/paintings-lg/bouguereau055.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Adolphe-William_Bouguereau/bouguereau000.jpg"
+        },
+        {
+            "title": "Nafeaffaa Ipolpo (When Will You Marry) 1892",
+            "author": "Paul Gauguin",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Paul_Gauguin/paintings-lg/gauguin032.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Paul_Gauguin/gauguin000.jpg"
+        },
+        {
+            "title": "The Floor Scrapers 1875",
+            "author": "Gustave Caillebotte",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Gustave_Caillebotte/paintings-lg/caillebotte001.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Gustave_Caillebotte/caillebotte000.jpg"
+        },
+        {
+            "title": "Dance at the Moulin de la Galette 1876",
+            "author": "Pierre-Auguste Renoir",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Pierre-Auguste_Renoir/paintings-lg/renoir061.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Pierre-Auguste_Renoir/renoir000.jpg"
+        },
+        {
+            "title": "The Angelus c.1857/59",
+            "author": "Jean-Francois Millet",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Jean-Francois_Millet/paintings-lg/millet001.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Jean-Francois_Millet/millet000.jpg"
+        },
+        {
+            "title": "Boreas 1903",
+            "author": "John William Waterhouse",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/John_William_Waterhouse/paintings-lg/waterhouse059.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/John_William_Waterhouse/waterhouse000.jpg"
+        },
+        {
+            "title": "Ophelia c.1851/52",
+            "author": "Sir John Everett Millais",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Sir_John_Everett_Millais/paintings-lg/millais002.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Sir_John_Everett_Millais/millais000.jpg"
+        },
+        {
+            "title": "Stacks of Wheat (End of Summer) 1891",
+            "author": "Claude Monet",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Claude_Oscar_Monet/paintings-lg/monet345.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Claude_Oscar_Monet/monet000.jpg"
+        },
+        {
+            "title": "Saturn Devouring one of His Sons c.1821/23",
+            "author": "Francisco de Goya",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Francisco_de_Goya_y_Lucientes/paintings-lg/goya002.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Francisco_de_Goya_y_Lucientes/goya.jpg"
+        },
+        {
+            "title": "The Odalisque 1745",
+            "author": "Francois Boucher",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Francois_Boucher/paintings-lg/boucher044.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Francois_Boucher/boucher000.jpg"
+        },
+        {
+            "title": "Portrait of Doctor Gachet 1890",
+            "author": "Vincent van Gogh",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Vincent_van_Gogh/paintings-lg/gogh129.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Vincent_van_Gogh/gogh000.jpg"
+        },
+        {
+            "title": "Virgin and Child with St. Anne c.1502/13",
+            "author": "Leonardo da Vinci",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/da_Vinci_Leonardo/paintings-lg/leonardo021.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/da_Vinci_Leonardo/leonardo000.jpg"
+        },
+        {
+            "title": "Still Life: Vase with Fourteen Sunflowers 1888",
+            "author": "Vincent van Gogh",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Vincent_van_Gogh/paintings-lg/gogh160.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Vincent_van_Gogh/gogh000.jpg"
+        },
+        {
+            "title": "The Supper at Emmaus 1601",
+            "author": "Michelangelo Merisi da Caravaggio",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Michelangelo_Merisi_da_Caravaggio/paintings-lg/caravaggio011.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Michelangelo_Merisi_da_Caravaggio/caravaggio000.jpg"
+        },
+        {
+            "title": "Mont Sainte-Victoire and the Viaduct of the Arc ... c.1882/85",
+            "author": "Paul Cezanne",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Paul_Cezanne/paintings-lg/cezanne030.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Paul_Cezanne/cezanne000.jpg"
+        },
+        {
+            "title": "Bacchus and Ariadne c.1520/23",
+            "author": "Tiziano Vecellio Titian",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Tiziano_Vecellio_Titian/paintings-lg/titian011.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Tiziano_Vecellio_Titian/titian000.jpg"
+        },
+        {
+            "title": "School of Athens c.1510/11",
+            "author": "Raffaello Sanzio Raphael",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Raffaello_Sanzio_Raphael/paintings-lg/raphael029.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Raffaello_Sanzio_Raphael/raphael000.jpg"
+        },
+        {
+            "title": "Boulevard Montmartre - Afternoon, Sunshine 1897",
+            "author": "Camille Jacob Pissarro",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Camille_Jacob_Pissarro/paintings-lg/pissarro093.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Camille_Jacob_Pissarro/pissarro000.jpg"
+        },
+        {
+            "title": "Boulevard des Capucines c.1873/74",
+            "author": "Claude Monet",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Claude_Oscar_Monet/paintings-lg/monet195.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Claude_Oscar_Monet/monet000.jpg"
+        },
+        {
+            "title": "Two Tahitian Women 1899",
+            "author": "Paul Gauguin",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Paul_Gauguin/paintings-lg/gauguin018.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Paul_Gauguin/gauguin000.jpg"
+        },
+        {
+            "title": "Paris Street; Rainy Weather 1877",
+            "author": "Gustave Caillebotte",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Gustave_Caillebotte/paintings-lg/caillebotte016.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Gustave_Caillebotte/caillebotte000.jpg"
+        },
+        {
+            "title": "Red Nude (Nude on a Cushion) 1917",
+            "author": "Amedeo Modigliani",
+            "artworkUrl": "https://cdn.topofart.com/images/artists/Amedeo_Modigliani/paintings-lg/modigliani004.jpg",
+            "authorImgUrl": "https://cdn.topofart.com/images/artists/Amedeo_Modigliani/modigliani000.jpg"
+        }
+    ]
+}
