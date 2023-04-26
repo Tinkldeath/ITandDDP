@@ -4,8 +4,8 @@
 * Social network for artists and designers
 
 ## Stack
-* html, css, js Frontend
-* express js Backend
+* html, css, js frontend
+* express js backend
 * mongoDB database
 * figma for mockups
 
