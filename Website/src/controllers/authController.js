@@ -20,7 +20,6 @@ module.exports.getLogin = async function (req,res) {
 
 module.exports.login = async function (req,res) {
     try {
-        console.log(req.body);
         const { login, password } = req.body
         const user = await userModel.findOne({login: login})
         if(!user) {
