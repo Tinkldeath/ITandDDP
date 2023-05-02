@@ -10,7 +10,8 @@ const schema = new Schema({
     friends: [Schema.Types.ObjectId],
     posts: [Schema.Types.ObjectId],
     chats: [Schema.Types.ObjectId],
-    friend_requests: [Schema.Types.ObjectId]
+    friend_requests: [Schema.Types.ObjectId],
+    archive: [Schema.Types.ObjectId]
 });
 
 module.exports = mongoose.model('User', schema, 'users');

@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="js/main.js" type="text/javascript">  </script>
+    <script src="https://kit.fontawesome.com/f91f4a295b.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -27,7 +29,7 @@
                 <button class="navbar-link" onclick="renderAuthors()"> Authors </button>
                 <div style="display: flex; margin-right: 20px;" class="searchbar-container">
                     <input class="searchbar" type="text" placeholder="Type here for search">
-                    <button class="search-button"> <img src="images/search.png"> </button>
+                    <button class="search-button"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: black;"></i></button>
                 </div>
                 <!-- <img class="user-image" src="./../images/duck.png">  -->
             </nav>
@@ -40,8 +42,8 @@
             <script> renderToolbar() </script>
         </div>
         <div class="content">
-            <div class="content-container">
-                <ul>
+            <div class="content-container" id="content-container">
+                <ul></ul>
                     <script>
                         renderPosts()
                     </script>
@@ -49,7 +51,7 @@
             </div>
             <div class="options"> 
                 <h3> Options: </h3>
-                <div class="options-section">
+                <div class="options-section" id="options-bar">
                     <button class="create-post-button" onclick="routeToNewPost()"> Create Post </button>
                     <button class="options-button"> Option <img class="option-image" src="./../images/option-triangle.png"> </button>
                     <button class="options-button"> Option <img class="option-image" src="./../images/option-triangle.png"> </button>

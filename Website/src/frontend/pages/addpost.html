@@ -19,19 +19,19 @@
                 <a href="/"> Art portal </a>
             </div>
                 <form id="newPostForm">
-                    <input type="text" id="title" placeholder="Artwork Title">
-                    <select name="category" id="category-select">
+                    <input type="text" id="title" name="title" placeholder="Artwork Title" required>
+                    <select name="category" id="category-select" required>
                         <script> renderCategories() </script>
                     </select>
-                    <input type="text" id="style" placeholder="Style">
-                    <input type="text" id="technique" placeholder="Technique">
-                    <input type="text" id="genre" placeholder="Genre">
+                    <input type="text" id="style" name="style" placeholder="Style" required>
+                    <input type="text" id="technique" name="technique" placeholder="Technique" required>
+                    <input type="text" id="genre" name="genre" placeholder="Genre" required>
                     <div style="display: flex; width: 100%;">
-                        <input type="file" name="recfile" id="image" accept="image/png, image/jpeg, image/jpg"> 
+                        <input type="file" name="recfile" id="recfile" accept="image/png, image/jpeg, image/jpg"> 
                         <p> Choose an image </p>
                     </div>
                 </form>
-                <button onclick=""> Create Post </button>
+                <button onclick="createPost()"> Create Post </button>
         </div>
     </div>
 </body>

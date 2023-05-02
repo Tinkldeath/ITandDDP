@@ -6,9 +6,9 @@ module.exports = function(req, res , next) {
             req.headers.authorization = `Bearer ${req.cookies.jwt}`
             next();
         } else {
-            return res.redirect('/login');
+            res.redirect('/login');
         }
     } else {
-        return res.redirect('/');
+        return res.redirect('/login');
     }
 }
