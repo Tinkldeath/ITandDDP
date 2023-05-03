@@ -28,8 +28,8 @@
                 <button class="navbar-link" onclick="renderCategories()"> Categories </button>
                 <button class="navbar-link" onclick="renderAuthors()"> Authors </button>
                 <div style="display: flex; margin-right: 20px;" class="searchbar-container">
-                    <input class="searchbar" type="text" placeholder="Type here for search">
-                    <button class="search-button"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: black;"></i></button>
+                    <input class="searchbar" id="search" type="text" placeholder="Type here for search">
+                    <button class="search-button" onclick="search()"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: black;"></i></button>
                 </div>
                 <!-- <img class="user-image" src="./../images/duck.png">  -->
             </nav>
@@ -53,10 +53,10 @@
                 <h3> Options: </h3>
                 <div class="options-section" id="options-bar">
                     <button class="create-post-button" onclick="routeToNewPost()"> Create Post </button>
+                    <!-- <button class="options-button"> Option <img class="option-image" src="./../images/option-triangle.png"> </button>
                     <button class="options-button"> Option <img class="option-image" src="./../images/option-triangle.png"> </button>
                     <button class="options-button"> Option <img class="option-image" src="./../images/option-triangle.png"> </button>
-                    <button class="options-button"> Option <img class="option-image" src="./../images/option-triangle.png"> </button>
-                    <button class="clear-button"> Clear </button>
+                    <button class="clear-button"> Clear </button> -->
                 </div>
             </div>
         </div>

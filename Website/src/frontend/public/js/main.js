@@ -1,3 +1,11 @@
+let POSTS = []
+let FILTER = {
+    category: null,
+    style: null,
+    genre: null,
+    technique: null
+}
+
 function delete_cookie( name ) {
     document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
 }
@@ -15,6 +23,7 @@ function renderTop() {
             return res.json();
         })
         .then(data => {
+            POSTS = data.posts;
             showPosts(data.posts);
             showPostsOptions(data);
         });
@@ -216,7 +225,6 @@ function routeToNewPost() {
 
 function renderToolbar() {
     const jwt = document.cookie.split('=')[1];
-    console.log(jwt);
     if(jwt) {
         fetch('http://localhost:3000/api/user', {method: 'GET', headers: {authorization: `bearer ${jwt}`}})
         .then( res => {
@@ -258,6 +266,7 @@ function renderPosts() {
             return res.json()
         })
         .then( data => {
+            POSTS = data.posts;
             showPosts(data.posts);
             showPostsOptions(data);
         });
@@ -336,6 +345,7 @@ function renderProfile(id) {
             archive = `<button class="post-footer-archive"> <i class="fa-solid fa-trash" style="color: #ffffff;"></i> </button>`
         }
         document.querySelector('div.content-container').insertAdjacentHTML('afterbegin', html);
+        POSTS = data.posts;
         showPosts(data.posts);
         showPostsOptions(data);
     }).catch(error => {
@@ -368,13 +378,23 @@ function showPosts(posts) {
                             </div>
                             <div class="post-footer">
                                 <button class="post-footer-button" id="${`${element._id}-like`}" onclick="likePost('${element._id}')"><i class="fa-solid fa-fire" style="color: #ffffff;"></i><p>${element.likes}</p></button>
-                                <button class="post-footer-button"><i class="fa-regular fa-comment" style="color: #ffffff;"></i><p>${element.comments.length}</p></button>
+                               <!-- <button class="post-footer-button"><i class="fa-regular fa-comment" style="color: #ffffff;"></i><p>${element.comments.length}</p></button> -->
                                 <button class="post-footer-archive" onclick="archivePost('${element._id}')"><i class="fa-solid fa-inbox" style="color: #ffffff;"></i></button>
                             </div>
                         </li>`
         document.querySelector('ul').insertAdjacentHTML('beforeend', markup);
     });
 };
+
+function deletePost(id) {
+    clearHeader();
+    clearOptions();
+    fetch(`http://localhost:3000/api/posts/${id}`, {method: 'DELETE'}).then(res => {
+        return res.json();
+    }).then(data => {
+        showStatistics(data.posts);
+    });
+}
 
 function showStatistics(posts) {
     posts.forEach(element => {
@@ -393,6 +413,7 @@ function showStatistics(posts) {
                                 </div>
                             </div>
                             <img src="${element.imageUrl}">
+                            <button class="delete-button" onclick="deletePost('${element._id}')"> <i class="fa-solid fa-trash fa-xl" style="color: #ffffff;"></i> </button>
                         </li>`
         document.querySelector('ul').insertAdjacentHTML('beforeend', markup);
     });
@@ -419,6 +440,28 @@ function showAuthors(authors) {
                         </li>`
         document.querySelector('ul').insertAdjacentHTML('beforeend', markup);
     });
+}
+
+function search() {
+    clearHeader();
+    clearOptions();
+    const query = document.getElementById('search').value
+    if(query === '') {
+        renderPosts();
+    } else {
+        fetch('http://localhost:3000/api/posts/search', {method: 'POST', headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        }, body: JSON.stringify({
+            'query': query
+        })}).then(res => {
+            return res.json();
+        }).then(data => {
+            POSTS = data.posts;
+            showPosts(data.posts);
+            showPostsOptions(data);
+        });
+    }
 }
 
 function clearOptions() {
@@ -458,8 +501,8 @@ function showPostsOptions(doc) {
         optionsMarkup += `<option value="${option}">${option}</option>`
     });
     optionsMarkup += '</select>'
-    optionsMarkup += `<button class="apply-button"> Apply </button>
-                     <button class="clear-button"> Clear </button>`
+    optionsMarkup += `<button class="apply-button" onclick="filterPosts()"> Apply </button>
+                     <button class="clear-button" onclick="clearFilter()"> Clear </button>`
     document.querySelector('div.options-section').insertAdjacentHTML('beforeend', optionsMarkup)
 }
 
@@ -490,7 +533,7 @@ function likePost(id) {
                         </div>
                         <div class="post-footer">
                         <button class="post-footer-button" id="${`${element._id}-like`}" onclick="likePost('${element._id}')"><i class="fa-solid fa-fire" style="color: #ffffff;"></i><p>${element.likes}</p></button>
-                        <button class="post-footer-button"><i class="fa-regular fa-comment" style="color: #ffffff;"></i><p>${element.comments.length}</p></button>
+                        <!-- <button class="post-footer-button"><i class="fa-regular fa-comment" style="color: #ffffff;"></i><p>${element.comments.length}</p></button> -->
                         <button class="post-footer-archive"><i class="fa-solid fa-inbox" style="color: #ffffff;"></i></button>
                         </div>`
         document.getElementById(element._id).insertAdjacentHTML('beforeend', markup); 
@@ -525,6 +568,7 @@ function renderArchive() {
     fetch(`http://localhost:3000/api/archive/`, {method: 'GET'}).then(res => {
         return res.json()
     }).then(data => {
+        POSTS = data.posts;
         showArchivePosts(data.posts);
         showPostsOptions(data);
     }, error => {
@@ -569,6 +613,7 @@ function acceptFriendRequest(id) {
         return res.json();
     }).then(data => {
         alert(data.message);
+        document.getElementById(id).style.display = "none";
     }).catch(error => {
         console.log(error);
         document.location.href = '/login'
@@ -579,7 +624,8 @@ function denyFriendRequest(id) {
     fetch(`http://localhost:3000/api/friend-requests/${id}/deny`, {method: 'GET'}).then(res => {
         return res.json();
     }).then(data => {
-        alert(data);
+        alert(data.message);
+        document.getElementById(id).style.display = "none";
     }).catch(error => {
         console.log(error);
         document.location.href = '/login'
@@ -603,4 +649,43 @@ function showFriendRequests(requests) {
                         </li>`
         document.querySelector('ul').insertAdjacentHTML('beforeend', markup);
     });
+}
+
+function filterPosts() {
+    const category = document.getElementById('category-select').value
+    const style = document.getElementById('style-select').value
+    const genre = document.getElementById('genre-select').value
+    const technique = document.getElementById('technique-select').value
+    let filtered = POSTS
+    if(category !== '') {
+        filtered = filtered.filter(post => {
+            return post.category === category;
+        });
+    }
+    if(style !== '') {
+        filtered = filtered.filter(post => {
+            return post.style === style;
+        });
+    }
+    if(genre !== '') {
+        filtered = filtered.filter(post => {
+            return post.genre === genre;
+        });
+    }
+    if(technique !== '') {
+        filtered = filtered.filter(post => {
+            return post.technique === technique;
+        });
+    }
+    clearHeader();
+    showPosts(filtered);
+}
+
+function clearFilter() {
+    document.getElementById('category-select').value = ""
+    document.getElementById('style-select').value = ""
+    document.getElementById('genre-select').value = ""
+    document.getElementById('technique-select').value = ""
+    clearHeader();
+    showPosts(POSTS);
 }

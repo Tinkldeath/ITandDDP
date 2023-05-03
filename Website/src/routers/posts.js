@@ -11,6 +11,8 @@ router.get('/posts', controller.posts);
 router.get('/posts/top', controller.top);
 //POST: http://localhost:port/api/posts/add/
 router.post('/posts/add', auth, upload.single('recfile'), controller.addPost);
+// DELETE: http://localhost:port/api/posts/:id/
+router.delete('/posts/:id', cookieParser, auth, controller.deletePost);
 // GET: http://localhost:port/api/posts/:id/like
 router.get('/posts/:id/like', cookieParser, auth, controller.like);
 // GET: http://localhost:port/api/posts/archive/:id
@@ -21,5 +23,7 @@ router.delete('/posts/archive/:id', cookieParser, auth, controller.unarchive);
 router.get('/archive', cookieParser, auth, controller.getArchive);
 // GET: http://localhost:port/api/ststistics/
 router.get('/statistics', cookieParser, auth, controller.statistics);
+//POST: http://localhost:port/api/posts/search/
+router.post('/posts/search/', controller.search);
 
 module.exports = router;

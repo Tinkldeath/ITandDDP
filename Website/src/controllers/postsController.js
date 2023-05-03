@@ -3,6 +3,8 @@ const postModel = require('./../data/models/postModel');
 const userModel = require('./../data/models/userModel');
 const categoryModel = require('./../data/models/categoryModel');
 const commentModel = require('./../data/models/commentModel');
+const path = require('path');
+const fs = require('fs');
 
 function comparePosts(post1, post2) {
     if (post1.likes.length > post2.likes.length) {
@@ -415,5 +417,136 @@ module.exports.statistics = async function(req, res) {
     } catch {
         console.log(error);
         res.sendStatus(500);
+    }
+}
+
+module.exports.deletePost = async function(req, res) {
+    try {
+        const post = await postModel.findById(req.params.id);
+        if(post.imageUrl) {
+            const url = path.resolve(`src/uploads/${post.imageUrl}`);
+            fs.unlink(url, (err) => {
+                console.log(err);
+            });
+        }
+        await postModel.deleteOne({_id: post._id});
+        const posts = await postModel.find({});
+        const sorted = posts.sort(comparePosts);
+        const top = sorted.slice(0, 100);
+        const others = sorted.slice(100, posts.length);
+        for (let i = 0; i < others.length; i++) {
+            const post = others[i];
+            const author = await userModel.findById(post.owner);
+            author.topRated = false
+            await author.save()
+        }
+        const user = await userModel.findById(req.userId);
+        let document = {
+            posts: []
+        }
+        if(user) {
+            const userPosts = await postModel.find({owner: user._id})
+            for (let i = 0; i < userPosts.length; i++) {
+                const post = userPosts[i];
+                const category = await categoryModel.findById(post.category);
+                const topIndex = top.findIndex(element => {
+                    return element._id.toString() === post._id.toString()
+                });
+                document.posts.push({
+                    _id: post._id,
+                    title: post.title,
+                    author: user.username,
+                    authorId: user._id,
+                    authorUrl: `http://${keys.host}:${keys.port}/api/authors/${user._id}`,
+                    authorImageUrl: `http://${keys.host}:${keys.port}/api/images/${user.imageUrl.replace('/uploads/', '')}`,
+                    imageUrl: `http://${keys.host}:${keys.port}/api/images/${post.artworkUrl.replace('/uploads/', '')}`,
+                    date: post.date,
+                    category: category.title,
+                    technique: post.technique,
+                    genre: post.genre,
+                    style: post.style,
+                    likes: post.likes.length,
+                    comments: post.comments.length,
+                    topIndex: topIndex + 1
+                });
+            }
+            res.status(200).json(document);
+        } else {
+            res.sendStatus(500);
+        }
+    } catch {
+        console.log(error);
+    }
+}
+
+module.exports.search = async function(req, res) {
+    try {
+        const query = req.body.query;
+        const raw = await postModel.find({});
+        const posts = raw.filter(post => {
+            return (post.title.toLowerCase().includes(query.toLowerCase()) || post.style.toLowerCase().includes(query.toLowerCase()) || post.genre.toLowerCase().includes(query.toLowerCase()) || post.technique.toLowerCase().includes(query.toLowerCase()));
+        });
+        let categoryOptions = new Set();
+        let techniqueOptions = new Set();
+        let styleOptions = new Set();
+        let genreOptions = new Set();
+        let document = {
+            posts: [],
+            categoryOptions: [],
+            styleOptions: [],
+            genreOptions: [],
+            techniqueOptions: []
+        }
+        for (let i = 0; i < posts.length; i++) {
+            const post = posts[i];
+            const user = await userModel.findById(post.owner);
+            const category = await categoryModel.findById(post.category);
+            let comments = [];
+            for (let j = 0; j < post.comments.length; j++) {
+                const comment = array[j];
+                const author = await userModel.findById(comment.author);
+                comments.push({
+                    _id: comment._id,
+                    author: author.username,
+                    content: comment.content,
+                    date: comment.date
+                });
+            }
+            document.posts.push({
+                _id: post._id,
+                title: post.title,
+                author: user.username,
+                authorId: user._id,
+                authorUrl: `http://${keys.host}:${keys.port}/api/authors/${user._id}`,
+                authorImageUrl: `http://${keys.host}:${keys.port}/api/images/${user.imageUrl.replace('/uploads/', '')}`,
+                imageUrl: `http://${keys.host}:${keys.port}/api/images/${post.artworkUrl.replace('/uploads/', '')}`,
+                date: post.date,
+                category: category.title,
+                technique: post.technique,
+                genre: post.genre,
+                style: post.style,
+                likes: post.likes.length,
+                comments: comments
+            });
+            categoryOptions.add(category.title);
+            genreOptions.add(post.genre);
+            styleOptions.add(post.style);
+            techniqueOptions.add(post.technique);
+        }
+        categoryOptions.forEach(option => {
+            document.categoryOptions.push(option);
+        });
+        genreOptions.forEach(option => {
+            document.genreOptions.push(option);
+        });
+        styleOptions.forEach(option => {
+            document.styleOptions.push(option)
+        });
+        techniqueOptions.forEach(option => {
+            document.techniqueOptions.push(option);
+        });
+        res.status(200).json(document);
+    } catch {
+        console.log(error);
     }
 }
