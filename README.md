@@ -28,3 +28,7 @@
 ## Additional
 * [Figma mockup](https://www.figma.com/file/dkVyDuuJfs4rYi6yMATlNM/Art-Portal?t=QxPJZ3eBRM0dKUfH-1)
 * ![Data models](Docs/DataModels.png)
+  
+## Results
+https://github.com/Tinkldeath/ITandDDP/assets/68143464/7d0d12ce-ec36-45da-8d7f-ce5cc34edf65
+
